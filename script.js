@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function() {
-    var titleImageAndTxt = document.querySelector('.titleImageAndTxt');
-    var img = document.querySelector('.titleImageAndTxt img');
+    var titleImageAndTxt = document.querySelector('.heroContainer');
+    var img = document.querySelector('.heroContainer img');
   
     var scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
 
