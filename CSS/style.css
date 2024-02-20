@@ -12,12 +12,16 @@ body{
   background-color:#AB9B96;
 }
 
+a{
+  text-decoration: none;
+}
+
 button{
   font-family: serif;
 }
 .headerConstraint{
   position: absolute;
-  height: 1315px;
+  height: 1320px;
   width:  100%;
   top: 0;
 }
@@ -184,16 +188,18 @@ button{
   grid-template-columns:  repeat(4, 1fr); /* Creates 4 gridBoxs with equal width */
   text-align: center;
   width: 100%;
-  height: 420px;
+  height: 430px;
   font-size: 1.1rem;
   color: white;
   max-width: 1400px;
   margin: 0 auto;
+ 
 }
 .gridContainer .gridBox{
   position: relative;
   overflow: hidden; /* Ensure text does not overflow from the grid item */
   min-width: 250px;
+  color: white;
 }
 
 .gridContainer .gridBoxHeader{
@@ -202,7 +208,7 @@ button{
   top: 25%; 
   left: 50%; 
   transform: translate(-50%, -50%); /* Center the text container */
-  padding: 20px;
+  padding: 15px;
   outline: #000000 solid 2px;
   outline-offset: -2px;
   background-color: #A63A50;
@@ -213,23 +219,37 @@ button{
   position: absolute;
   top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the text container */
+  transform: translate(-50%, -70%); /* Center the text container */
   padding: 20px;
   width: 90%;
   font-size: smaller;
 }
 
+.findOutMore{
+  position: absolute;
+  text-align: center; /* Center the text horizontally */
+  width: 100%; /* Make the width 100% to center the text */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  bottom: 30px;
+}
+
 .gridContainer .gridBox img {
   width: 100%;
-  height: 420px;
+  height: 430px;
   object-fit: cover;
   filter: brightness(0.8);
   transition: filter 0.3s ease;
 }
   
-
 .gridContainer .gridBox:hover img {
   filter: brightness(0.4);
+}
+
+.gridContainer .gridBox:hover .findOutMore {
+  
+  opacity: 1;
+  bottom: 30px;
 }
 
 .banner2{
@@ -277,7 +297,7 @@ button{
 .contactForm h1{
   position: relative;
   font-size: 2rem;;
-  top: 45px;
+  top: 50px;
   right: -5%;  
   width: 450px;
 }
@@ -305,6 +325,22 @@ button{
   top: 244px;
 }
 
+.contactForm .facebookIconForm{
+  position: absolute;
+  width: 25px;
+  filter: invert(100%);
+  left: 40%;
+  top: 300px;
+}
+
+.contactForm .linkedinIconForm{
+  position: absolute;
+  width: 25px;
+  filter: invert(100%);
+  left: 52%;
+  top: 300px;
+}
+
 .contactForm form{
   position: relative;
   align-items: center;
@@ -313,7 +349,7 @@ button{
   outline: solid 2px #A1674A;
   outline-offset: 5px;
   right: -50%;
-  top: -60%;
+  top: -340px;
   z-index: 2; /* ensures the header does not interfere with selecting the name input */
 }
 
@@ -323,10 +359,10 @@ button{
 }
 
 .contactForm input,
-.contactForm textarea {
+.contactForm textarea,select {
   font-size: 1rem;
   margin-bottom: 15px;
-  padding: 6px;
+  padding: 3px;
   width: 100%;
   resize: none; /* Prevent resizing */
   overflow: hidden; /* Hide scrollbar and disable scrolling */
@@ -334,7 +370,7 @@ button{
 }
 
 .contactForm .message{
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .contactForm button{
@@ -364,9 +400,8 @@ button{
   color: #000000;
 }
 
-a {
-  color: black; /* Set the color to black */
-  text-decoration: none; /* Optional: Remove the underline */
-}
+
+
+
 
 

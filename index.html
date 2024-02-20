@@ -41,29 +41,33 @@
   </div>
 
   <section class="gridContainer">
-    <div class="gridBox">
+    <a class="gridBox" href="https://www.facebook.com/profile.php?id=100095441718259">
       <img src="hiTecTrim.jpg" alt="tecWork">
       <h1 class="gridBoxHeader">Service</h1><br><br>
       <p class="gridBoxParagraph">It's during these maintenance routines that we find potential failures & take steps to prevent them.</p>
-    </div>
+      <p class="findOutMore"><em>find out more</em></p>
+    </a>
     
-    <div class="gridBox">
+    <a class="gridBox" href="https://www.facebook.com/profile.php?id=100095441718259">
       <img src="workingTrim.jpg" alt="closeUp">   
       <h1 class="gridBoxHeader">Recommission</h1><br><br>
-      <p class="gridBoxParagraph">With high-precision care and attention, we assess, refurbish, and recalibrate, ensuring your CNC equipment operates like new.</p> 
-    </div> 
+      <p class="gridBoxParagraph">With care and attention, we assess, refurbish, and recalibrate, ensuring your equipment operates like new.</p> 
+      <p class="findOutMore"><em>find out more</em></p>
+    </a> 
 
-    <div class="gridBox">
+    <a class="gridBox" href="https://www.facebook.com/profile.php?id=100095441718259">
       <img src="spareDrillsTrim.jpg" alt="CNC Spares">     
       <h1 class="gridBoxHeader">Breakdowns</h1>
-      <p class="gridBoxParagraph">Our team appreciates the urgency in getting you up and running asap.</p>       
-    </div>
+      <p class="gridBoxParagraph">Our team appreciates the urgency in getting you up and running as soon as possible after a breakdown.</p>       
+      <p class="findOutMore"><em>find out more</em></p>
+    </a>
 
-    <div class="gridBox">
+    <a class="gridBox" href="https://www.facebook.com/profile.php?id=100095441718259">
       <img src="closeUpTrim.jpg" alt="working">
       <h1 class="gridBoxHeader">Decommission</h1><br><br>
-      <p class="gridBoxParagraph">When it's time to retire or relocate your equipment, our experienced team handles every step. We ensure environmentally responsible practices while maximising the salvageable value of components.</p>
-    </div>
+      <p class="gridBoxParagraph">When it's time to retire or relocate your equipment, our experienced team handles every step. </p>
+      <p class="findOutMore"><em>find out more</em></p>
+    </a>
   </section>
 
   <section class="banner2">
@@ -94,6 +98,8 @@
       <br><br>Mitre House<br>Pitt Street West<br>Stoke-On-Trent
       <br>​ST6 3JW<br><br> &nbsp; service@tfengineeringservices.co.uk
       <br><br> &nbsp; 07538 976119
+      <a href="https://www.facebook.com/profile.php?id=100095441718259"><img class="facebookIconForm" src = "facebookIcon.png" alt="email Icon"></a>
+      <a href="https://www.facebook.com/profile.php?id=100095441718259"><img class="linkedinIconForm" src = "linked inIcon.png" alt="phone Icon"></a>
     </h3>
      
       <form action="none">
@@ -102,13 +108,20 @@
         <input type="text" placeholder="Phone Number">
         <input type="email" placeholder="Email">
         <input type="text" placeholder="Address">
+        <select id="dropdown" name="subject">
+          <option value="" disabled selected>Please select a subject</option>
+          <option value="apple">Book a service</option>
+          <option value="banana">Breakdown support</option>
+          <option value="orange">Request a quote</option>
+          <option value="grape">Other</option>
+        </select>
         <textarea class="message" placeholder="Message"></textarea> <!-- text area used so that text wraps to next line -->
         <button>Submit</button>
       </form>  
   </section>
 
   <section class="footer">
-    <h6 class="atrib"> Images supplied by https://www.vecteezy.com/ &nbsp; <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Gregor Cresnar - Flaticon</a></h6>
+    <h6 class="atrib"> Images supplied by https://www.vecteezy.com/ &nbsp; <a class="atrib" href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Gregor Cresnar - Flaticon</a></h6>
   </section>
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
