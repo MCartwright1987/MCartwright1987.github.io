@@ -426,10 +426,6 @@ button{
 
 /* Services Page */
 
-.servicesPage .heroContainer img{
-/*   transform: translateY(100px); */
-}
-
 .serviceSection{
   display: flex;
   height: 400px;
