@@ -211,7 +211,7 @@ button{
 .gridContainer{
   display: grid;
   overflow: hidden; 
-  grid-template-columns: repeat(4, minmax(250px, 1fr)); /* Default for wider screens */
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Default for wider screens */
   text-align: center;
   font-size: 1.1rem;
   color: white;
@@ -226,7 +226,7 @@ button{
   display: flex;
   justify-content: center; /* Center horizontally */
   overflow: hidden; /* Ensure text does not overflow from the grid item */
-  min-width: 250px;
+  min-width: 200px;
   color: white;
 }
 
@@ -515,7 +515,7 @@ object-fit: cover;
 
 @media (max-width: 1000px) {
   .gridContainer {
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(190px, 1fr));
   }
   .heroContainer .titleText{ /* 165 */
     font-size: 1.05rem;
@@ -596,6 +596,21 @@ object-fit: cover;
 
   .divider{
     width: 175px;
+  }
+
+  .gridContainer .gridBoxHeader{
+    font-size: 1.5rem;
+  }
+
+  .gridContainer .gridBox img{
+    filter: brightness(0.6);
+  }
+
+  .gridContainer .gridBoxParagraph{
+    position: absolute; 
+    top: 35%;
+    padding: 30px;
+    width: 100%;
   }
 
 }
