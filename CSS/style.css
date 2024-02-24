@@ -341,20 +341,18 @@ button{
   width: 450px;
 }
 
-.contactFormSection .emailIcon{
-  position: relative;
-  width: 20px;
-  filter: invert(100%);
-  right: 165px;
-  top: -20px;
+.contactFormSection .email{
+  display: flex;
 }
 
-.contactFormSection .phoneIcon{
+.contactFormSection .phone{
+  display: flex;
+}
+
+.contactFormSection img{
   position: relative;
   width: 20px;
   filter: invert(100%);
-  right: 65px;
-  top: -21px;
 }
 
 .contactFormSection .facebookIconForm{
@@ -530,8 +528,13 @@ object-fit: cover;
 
   .contactFormSection{
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    height: 1150px;
+    grid-template-rows: repeat(2);
+    height: 1140px;
+  }
+
+  .contactFormSection form{
+    position: relative;
+    bottom: 30px;
   }
 
   .serviceSection p{
@@ -544,12 +547,12 @@ object-fit: cover;
   .heroContainer .titleText{ /* 165 */
     font-size: 0.95rem;
     max-width: 60%;
-    top: 27%;
+    top: 32%;
   }
 
   .heroContainer .titleImageTriangle{
-    border-left: 300px solid transparent;
-    border-bottom: 450px solid #A63A50;
+    border-left: 280px solid transparent;
+    border-bottom: 430px solid #A63A50;
   }
 
   .narrowScreenHeader{
