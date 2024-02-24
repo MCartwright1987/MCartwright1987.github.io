@@ -1,0 +1,509 @@
+*{  
+  margin: 0; /* set margins and padding to 0 as opposed to default values set by browser */
+  padding: 0;
+  box-sizing: border-box; /* changes how the inspector shows measurements  */
+}
+
+html {
+  /* scroll-behavior: smooth; */
+}
+
+body{
+  background-color:#AB9B96;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  font-family: serif;
+}
+
+.header{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  width: 100%; 
+  height: 90px; 
+  background-color: #F0E7D8;
+  outline: 3px double #A1674A;
+  outline-offset: -2px;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+/*   opacity: 0.95; */
+}
+
+.leftHeaderDecoration{
+  position: absolute;
+  height: 40px;
+  width: 375px;
+  background-color:#A63A50;
+  /* opacity: 0.8; */
+  margin-top: -8px;
+  margin-left: 19px;
+}
+
+.leftHeaderDecoration::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -30px; /* Adjust this value based on your design */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 40px 30px; /* Adjust the angle and height as needed */
+  border-color: transparent transparent transparent #A63A50;
+}
+
+.header .logoImg{
+  height: 78px;
+  border-radius: 50%;
+  margin-left: 10px;
+  z-index: 2;
+}
+
+.logoText{
+  font-weight: 900;
+  margin-left: 10px;
+  font-size: 1rem;
+  z-index: 2;
+  margin-top: 10px;
+}
+
+.menuItems{
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  display: flex;
+  gap: 0px 20px;
+}
+
+.menuButton{
+  color: #000000;
+}
+
+.menuButton:hover{
+  color:#A63A50;
+  text-decoration: underline;
+}
+
+.homePage .homeButton{
+  color:#A63A50;
+  text-decoration: underline;
+}
+
+.servicesPage .servicesButton{
+  color:#A63A50;
+  text-decoration: underline;
+}
+
+.farRight{
+  margin: 5px 7px 0 auto;
+  display: flex;
+  gap: 0px 5px; /* The first value is the gap between items horizontally, and the second is the gap vertically */
+}
+
+.contactIcons, .contactDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 5px 5px;
+}
+
+.header .headerEmail{
+}
+
+.header .headerPhone{
+  margin-left: 26px;
+}
+
+.header .emailIcon{
+  width: 20px;
+}
+
+.header .phoneIcon{
+  width: 18px;
+  transform: translateX(30px);
+
+}
+
+.facebookIcon img{
+  width: 25px;
+  margin-right: 20px;
+  margin-left: 35px
+}
+
+.linkedinIcon img{
+  width: 25px;
+}
+
+.ContactMeButton:hover{
+  color:black;
+  background-color:#A1674A;
+}
+
+.heroContainer{
+  position: relative;
+  overflow: hidden; /* Ensure container doesn't allow child elements to overflow */
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroContainer img{
+  width: 105vw;
+  height: 520px; /* makes the banner partly visible*/
+  object-fit: cover; /* Maintain aspect ratio and cover the entire viewport */
+  display: block; /* Removes any extra spacing below the image */
+  filter: brightness(0.8);
+}
+
+.heroContainer .titleText{
+  color: white;
+  max-width: 45%;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 27%;
+  left: 7%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.triangleContainer{
+  position: absolute;
+  width: 100vw;
+  max-width: 1400px; 
+  margin: 0 auto;
+}
+
+.heroContainer .titleImageTriangle{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 400px solid transparent;
+  border-bottom: 600px solid #A63A50;
+  opacity: 65%; 
+}
+
+.banner1Text{
+  color: white;
+  background-color:#A63A50;
+  padding: 45px 22%;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.servicesPage .banner1Text{
+    position: absolute;
+    bottom: 0;
+    font-size: 2rem;
+}
+
+.gridContainer{
+  display: grid;
+  overflow: hidden; 
+  grid-template-columns:  repeat(4, 1fr); /* Creates 4 gridBoxs with equal width */
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  font-size: 1.1rem;
+  color: white;
+  max-width: 1400px;
+  margin: 0 auto;
+ 
+}
+.gridContainer .gridBox{
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  overflow: hidden; /* Ensure text does not overflow from the grid item */
+  min-width: 250px;
+  color: white;
+}
+
+.gridContainer .gridBoxHeader{
+  position: absolute;
+  top: 13%; 
+  font-size: 1.5rem;
+}
+
+.gridContainer .dividerLine{
+  position: absolute;
+  top: 33%;
+  width: 50%;
+  height: 4px;
+  background-color: #A63A50;
+}
+
+.gridContainer .gridBoxParagraph{
+  position: absolute; 
+  top: 40%;
+  padding: 30px;
+  width: 100%;
+}
+
+.findOutMore{
+  position: absolute;
+  bottom: 30px;
+  padding: 12px;
+  background-color: #A63A50;
+  border: solid #000000;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 25px;
+}
+
+.gridContainer .gridBox img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; /* scale the object's content to maintain its aspect ratio while filling the entirety of the element's box. */
+  filter: brightness(0.65);
+  transition: filter 0.7s ease-in-out;
+}
+  
+.gridContainer .gridBox:hover img {
+  filter: brightness(0.36);
+}
+
+.gridContainer .findOutMore:hover { 
+  opacity: 1;
+  color:black;
+  background-color:#A1674A;
+}
+
+.banner2{
+  background-color:#A63A50;
+  height: 180px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.banner2 h1{
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.banner2 ul{
+  display: flex;
+  justify-content: center; /* Center the list items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  margin: 0, 10%;
+}
+
+.banner2 ul li{
+  list-style: none;
+  color: white;
+  margin: 25px 25px 5px;
+  font-size: 1.2rem;
+}
+
+.contactForm{
+  position: relative; /* so that the form can stick to the right edge of this container */
+  height: 600px;
+  background-color: #000000;
+  border-top:2px solid #A1674A;
+  border-bottom:2px solid #A1674A;
+  outline-offset: -2px;
+  text-align: center;
+  color: white;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contactForm h1{
+  position: relative;
+  font-size: 2rem;;
+  top: 50px;
+  right: -5%;  
+  width: 450px;
+}
+
+.contactForm .address{
+  position: relative;
+  top: 70px;
+  right: -5%;
+  width: 450px;
+}
+
+.contactForm .emailIcon{
+  position: absolute;
+  width: 20px;
+  filter: invert(100%);
+  left: 6%;
+  top: 193px;
+}
+
+.contactForm .phoneIcon{
+  position: absolute;
+  width: 20px;
+  filter: invert(100%);
+  left: 31.5%;
+  top: 244px;
+}
+
+.contactForm .facebookIconForm{
+  position: absolute;
+  width: 25px;
+  filter: invert(100%);
+  left: 40%;
+  top: 300px;
+}
+
+.contactForm .linkedinIconForm{
+  position: absolute;
+  width: 25px;
+  filter: invert(100%);
+  left: 52%;
+  top: 300px;
+}
+
+.contactForm form{
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  width: 450px;
+  outline: solid 2px #A1674A;
+  outline-offset: 5px;
+  right: 0;
+  transform: translate(-20%,-335px);
+  z-index: 2; /* ensures the header does not interfere with selecting the name input */
+}
+
+.contactForm .formHeader{
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.contactForm input,
+.contactForm textarea,select {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding: 3px;
+  width: 100%;
+  resize: none; /* Prevent resizing */
+  overflow: hidden; /* Hide scrollbar and disable scrolling */
+  font-family: inherit;
+}
+
+.contactForm .message{
+  padding-bottom: 50px;
+}
+
+.contactForm button{
+  font-size: 1.2rem;
+
+  padding: 6px 50px;
+  color: white;
+  background-color:#A63A50;
+  border-radius: 25px;
+}
+
+.contactForm button:hover{
+  cursor: pointer;
+  background-color: #A1674A;
+  color: #000000;
+}
+
+.footer{
+  height: 100px;
+  width: 100%;
+  background-color: #AB9B96;
+}
+
+.footer .atrib{
+  position: relative;
+  text-align: center;
+  padding-top: 80px;
+  color: #000000;
+}
+
+/* Services Page */
+
+.serviceSection{
+  display: flex;
+  height: 400px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.imageSpace{
+  flex: 2;
+  overflow: hidden;
+}
+
+.imageSpace img{
+  width: 100%;
+  height: 400px;
+object-fit: cover;
+}
+
+.textSpace{
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center;
+  background-color:#F0E7D8;
+  flex: 1;
+}
+
+.textSpace h1{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #A1674A;
+}
+
+.divider{
+  height: 4px;
+  width: 200px;
+  background-color: #A63A50;
+
+}
+
+.textSpace p{
+  margin: 40px;
+}
+
+.bannerService{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  
+  max-width: 1400px;
+  height: 400px;
+  background-color: #000000;
+}
+
+.bannerService button{
+  font-size: 1.2rem;
+  padding: 6px 30px;
+  color: white;
+  background-color:#A63A50;
+  border-radius: 25px;
+
+  width: 200px;
+}
+
+.bannerService button:hover{
+  background-color: #A1674A;
+  color: #000000;
+  cursor: pointer;
+}
+
+.bannerService img{
+  margin-top: 50px;
+  width: 45px;
+}
+
+
+
+
+
+
