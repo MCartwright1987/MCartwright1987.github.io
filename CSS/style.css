@@ -363,7 +363,7 @@ button{
   width: 25px;
   filter: invert(100%);
   left: 40%;
-  top: 300px;
+  top: 270px;
 }
 
 .contactFormSection .linkedinIconForm{
@@ -371,7 +371,7 @@ button{
   width: 25px;
   filter: invert(100%);
   left: 52%;
-  top: 300px;
+  top: 270px;
 }
 
 .contactFormSection form{
@@ -532,7 +532,7 @@ object-fit: cover;
   .contactFormSection{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    height: 1100px;
+    height: 1050px;
   }
 
   .serviceSection p{
