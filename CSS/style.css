@@ -346,16 +346,16 @@ button{
   position: absolute;
   width: 20px;
   filter: invert(100%);
-  left: 6%;
-  top: 193px;
+  left: 13%;
+  top: 165px;
 }
 
 .contactFormSection .phoneIcon{
   position: absolute;
   width: 20px;
   filter: invert(100%);
-  left: 31.5%;
-  top: 244px;
+  left: 33.5%;
+  top: 210px;
 }
 
 .contactFormSection .facebookIconForm{
@@ -540,8 +540,6 @@ object-fit: cover;
   }
 
 }
-
-
 
 @media (max-width: 750px){
   .heroContainer .titleText{ /* 165 */
