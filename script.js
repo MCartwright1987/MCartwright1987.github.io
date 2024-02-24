@@ -16,7 +16,7 @@ window.addEventListener('scroll', function() {
     var scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
 
     // Adjust the translateY value to control the downward movement
-    var translateY = Math.min(190, scrollY * 0.6);
+    var translateY = Math.min(160, scrollY * 0.6);
   
     img.style.transform = 'translate(0px, ' + translateY + 'px)';
   });
