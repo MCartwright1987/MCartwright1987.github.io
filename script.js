@@ -15,26 +15,16 @@ function fetchAndInjectHeader() {
 function addParallaxEffect() {
   var heroContainer = document.querySelector('.heroContainer');
   var img = document.querySelector('.heroContainer img');
-  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-  // Use requestAnimationFrame for smoother scrolling
   function updateParallax() {
-    if (window.scrollY === 0) {
-      img.style.transform = 'translateY(0)';
-    } else {
+    if (window.scrollY !== 0) {
       img.style.transform = 'translateY(' + Math.min(300, window.scrollY * 0.6) + 'px)';
     }
   }
 
   // Add scroll event listener
   window.addEventListener('scroll', function () {
-    // For mobile devices, use requestAnimationFrame
-    if (isMobile) {
-      requestAnimationFrame(updateParallax);
-    } else {
-      // For non-mobile devices, update directly
-      updateParallax();
-    }
+    updateParallax();
   });
 }
 

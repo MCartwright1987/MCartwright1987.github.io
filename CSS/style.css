@@ -393,6 +393,10 @@ button {
   bottom: 29px;
 }
 
+#contactUsTarget{
+  transform: translateY(25px);
+}
+
 .contactFormSection form {
   flex: 1;
   margin: 50px;
@@ -586,6 +590,10 @@ select {
 
   .serviceSection p {
     font-size: 0.85em;
+  }
+
+  #contactUsTarget{
+    transform: translateY(-25px);
   }
 
 }
