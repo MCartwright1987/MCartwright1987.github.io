@@ -29,44 +29,30 @@ button {
   background-color: #F0E7D8;
   outline: 3px double #A1674A;
   outline-offset: -2px;
-  z-index: 3;
+  z-index: 2;
   color: rgb(0, 0, 0);
   
 }
 
-.leftHeaderDecoration {
+.angledStrip{
   position: absolute;
-  height: 35px;
-  width: 346px;
-  background-color: #A63A50;
-  margin-top: -8px;
-  margin-left: 19px;
-}
-
-.leftHeaderDecoration::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: -35px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 35px 35px;
-  border-color: transparent transparent transparent #A63A50;
+  width: 340px;
+  left: 53px;
+  top: 20px;
 }
 
 .logoImg {
   height: 78px;
   border-radius: 50%;
-  margin-left: 10px;
-  z-index: 2;
+  margin-left: 6px;
+  z-index: 1;
 }
 
-.logoText {
+.logoText { 
   font-weight: 900;
-  margin-left: 10px;
+  margin-left: 6px;
   font-size: 0.9rem;
-  z-index: 2;
+  z-index: 1;
   margin-top: 10px;
 }
 
@@ -143,7 +129,6 @@ button {
 .heroContainer {
   position: relative;
   overflow: hidden;
-  /* Ensure container doesn't allow child elements to overflow */
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -152,11 +137,8 @@ button {
 .heroContainer img {
   width: 100%;
   height: 520px;
-  /* makes the banner partly visible*/
   object-fit: cover;
-  /* Maintain aspect ratio and cover the entire viewport */
   display: block;
-  /* Removes any extra spacing below the image */
   filter: brightness(0.8);
 }
 
@@ -193,12 +175,12 @@ button {
 .banner1Text {
   color: white;
   background-color: #A63A50;
-  padding: 45px 15%;
+  padding: 40px 15%;
   text-align: center;
   font-size: 1.2rem;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
 }
 
 .servicesPage .banner1Text {
@@ -211,7 +193,6 @@ button {
   display: grid;
   overflow: hidden;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
-  /* Default for wider screens */
   text-align: center;
   font-size: 1.1rem;
   color: white;
@@ -224,9 +205,7 @@ button {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  /* Ensure text does not overflow from the grid item */
   min-width: 200px;
-  color: white;
 }
 
 .gridContainer .gridBoxHeader {
@@ -256,18 +235,14 @@ button {
   padding: 12px;
   background-color: #A63A50;
   border: solid #000000;
-  cursor: pointer;
-  font-size: 0.8rem;
   border-radius: 25px;
   color: white;
-  font-weight: 600;
 }
 
 .gridContainer .gridBox img {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  /* scale the object's content to maintain its aspect ratio while filling the entirety of the element's box. */
   filter: brightness(0.7);
   transition: filter 0.7s ease-in-out;
 }
@@ -293,14 +268,13 @@ button {
   color: white;
   text-align: center;
   padding-top: 15px;
+  text-decoration: underline;
 }
 
 .banner2 ul {
   display: flex;
   justify-content: center;
-  /* Center the list items horizontally */
   flex-wrap: wrap;
-  /* Allow items to wrap to the next row */
 }
 
 .banner2 ul li {
@@ -321,19 +295,15 @@ button {
 }
 
 .contactFormSection {
+  position: relative;
   display: flex;
   justify-content: center;
-
   height: 600px;
-  background-color: #000000;
-
-  border-top: 2px solid #A1674A;
-  border-bottom: 2px solid #A1674A;
-  outline-offset: -2px;
   text-align: center;
   color: white;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .addressSection {
@@ -344,7 +314,6 @@ button {
 }
 
 .contactFormSection h1 {
-  position: relative;
   font-size: 2rem;
   margin-top: 50px;
 
@@ -352,26 +321,18 @@ button {
 }
 
 .contactFormSection .address {
-  position: relative;
   width: 450px;
 }
 
 .contactFormSection .email {
   display: flex;
-  z-index: 2;
 }
 
 .contactFormSection .phone {
   display: flex;
-  z-index: 2;
-  
-}
-.phone h4{
-  color: white;
 }
 
 .contactFormSection img {
-  position: relative;
   width: 20px;
   filter: invert(100%);
 }
@@ -402,7 +363,6 @@ button {
   max-width: 450px;
   outline: solid 2px #A1674A;
   outline-offset: 5px;
-  z-index: 2;
 }
 
 .contactFormSection .formHeader {
@@ -419,7 +379,6 @@ select {
   width: 100%;
   resize: none;
   /* Prevent resizing */
-  overflow: hidden;
   /* Hide scrollbar and disable scrolling */
   font-family: inherit;
   color:  rgb(95, 95, 95);
