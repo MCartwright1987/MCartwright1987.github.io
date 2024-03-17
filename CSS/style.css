@@ -38,7 +38,7 @@ button {
 .angledStrip{
   position: absolute;
   width: 340px;
-  left: 53px;
+  left: 38px;
   top: 20px;
 }
 
@@ -578,7 +578,7 @@ select {
 
 @media (max-width: 750px) {
   .heroContainer .titleText {
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     max-width: 60%;
     top: 32%;
   }
@@ -621,7 +621,7 @@ select {
   }
 }
 
-@media (max-width: 650px){
+@media (max-width: 685px){
 
   .farRight {
     display: none;
