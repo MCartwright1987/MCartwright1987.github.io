@@ -1,0 +1,629 @@
+* {
+  margin: 0;
+  /* set margins and padding to 0 as opposed to default values set by browser */
+  padding: 0;
+  box-sizing: border-box;
+  /* changes how the inspector shows measurements  */
+}
+
+body {
+  background-color: #AB9B96;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: serif;
+}
+
+/* --HEADER SECTION-- */
+.header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #F0E7D8;
+  outline: 3px double #A1674A;
+  outline-offset: -2px;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+}
+
+.angledStrip{
+  position: absolute;
+  width: 340px;
+  left: 38px;
+  top: 20px;
+}
+
+.logoImg {
+  height: 78px;
+  border-radius: 50%;
+  margin-left: 6px;
+  z-index: 1;
+}
+
+.logoText { 
+  font-weight: 900;
+  margin-left: 6px;
+  font-size: 0.9rem;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.menuItems {
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  display: flex;
+  gap: 0px 20px;
+}
+
+.menuButton {
+  color: #000000;
+}
+
+.menuButton:hover {
+  color: #A63A50;
+  text-decoration: underline;
+}
+
+.homePage .homeButton {
+  color: #A63A50;
+  text-decoration: underline;
+}
+
+.servicesPage .servicesButton {
+  color: #A63A50;
+  text-decoration: underline;
+}
+
+.farRight {
+  margin: 5px 7px 0 auto;
+  display: flex;
+  gap: 0px 5px;
+  /* The first value is the gap between items horizontally, and the second is the gap vertically */
+}
+
+.contactIcons,
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 5px;
+}
+
+.header .headerPhone {
+  margin-left: 26px;
+}
+
+.header .emailIcon {
+  width: 17px;
+}
+
+.header .phoneIcon {
+  width: 15px;
+  transform: translateX(30px);
+}
+
+.facebookIcon img {
+  width: 25px;
+  margin-right: 20px;
+  margin-left: 35px
+}
+
+.linkedinIcon img {
+  width: 25px;
+}
+
+.ContactMeButton:hover {
+  color: black;
+  background-color: #A1674A;
+}
+
+.heroContainer {
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroContainer img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.8);
+}
+
+.heroContainer .titleText {
+  color: white;
+  max-width: 45%;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 27%;
+  left: 7%;
+  font-weight: 500;
+  text-align: center;
+  z-index: 1;
+}
+
+.triangleContainer {
+  position: absolute;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroContainer .titleImageTriangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 400px solid transparent;
+  border-bottom: 600px solid #A63A50;
+  opacity: 65%;
+}
+
+.banner1Text {
+  color: white;
+  background-color: #A63A50;
+  padding: 40px 15%;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.servicesPage .banner1Text {
+  position: absolute;
+  bottom: 0;
+  font-size: 2rem;
+}
+
+.gridContainer {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  text-align: center;
+  font-size: 1.1rem;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gridContainer .gridBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 200px;
+}
+
+.gridContainer .gridBoxHeader {
+  position: absolute;
+  top: 13%;
+  font-size: 1.5rem;
+}
+
+.gridContainer .dividerLine {
+  position: absolute;
+  top: 33%;
+  width: 50%;
+  height: 4px;
+  background-color: #A63A50;
+}
+
+.gridContainer .gridBoxParagraph {
+  position: absolute;
+  top: 40%;
+  padding: 30px;
+  width: 100%;
+}
+
+.findOutMore {
+  position: absolute;
+  bottom: 30px;
+  padding: 12px;
+  background-color: #A63A50;
+  border: solid #000000;
+  border-radius: 25px;
+  color: white;
+}
+
+.gridContainer .gridBox img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: filter 0.7s ease-in-out;
+}
+
+.gridContainer .gridBox:hover img {
+  filter: brightness(0.36);
+}
+
+.gridContainer .findOutMore:hover {
+  opacity: 1;
+  color: black;
+  background-color: #A1674A;
+}
+
+.banner2 {
+  background-color: #A63A50;
+  height: 180px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner2 h1 {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  text-decoration: underline;
+}
+
+.banner2 ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner2 ul li {
+  list-style: none;
+  color: white;
+  margin: 25px 25px 5px;
+  font-size: 1.2rem;
+}
+
+.contactformBackground {
+  position: absolute;
+  max-width: 1200px;
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contactFormSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  text-align: center;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.addressSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactFormSection h1 {
+  font-size: 2rem;
+  margin-top: 50px;
+
+  width: 450px;
+}
+
+.contactFormSection .address {
+  width: 450px;
+}
+
+.contactFormSection .email {
+  display: flex;
+}
+
+.contactFormSection .phone {
+  display: flex;
+}
+
+.contactFormSection img {
+  width: 20px;
+  filter: invert(100%);
+}
+
+.contactFormSection .facebookIconForm {
+  position: relative;
+  width: 25px;
+  filter: invert(100%);
+  right: 30px;
+}
+
+.contactFormSection .linkedinIconForm {
+  position: relative;
+  width: 25px;
+  filter: invert(100%);
+  left: 30px;
+  bottom: 29px;
+}
+
+#contactUsTarget{
+  transform: translateY(25px);
+}
+
+.contactFormSection form {
+  flex: 1;
+  margin: 50px;
+
+  max-width: 450px;
+  outline: solid 2px #A1674A;
+  outline-offset: 5px;
+}
+
+.contactFormSection .formHeader {
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.contactFormSection input,
+.contactFormSection textarea,
+select {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding: 3px;
+  width: 100%;
+  resize: none;
+  /* Prevent resizing */
+  /* Hide scrollbar and disable scrolling */
+  font-family: inherit;
+  color:  rgb(95, 95, 95);
+}
+
+.contactFormSection .message {
+  padding-bottom: 50px;
+}
+
+.contactFormSection button {
+  font-size: 1.2rem;
+
+  padding: 6px 50px;
+  color: white;
+  background-color: #A63A50;
+  border-radius: 25px;
+}
+
+.contactFormSection button:hover {
+  cursor: pointer;
+  background-color: #A1674A;
+  color: #000000;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: #AB9B96;
+}
+
+.footer .atrib {
+  position: relative;
+  text-align: center;
+  padding-top: 80px;
+  color: #000000;
+}
+
+/* -----SERVICES PAGE----- */
+
+.serviceSection {
+  display: flex;
+  height: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageSpace {
+  flex: 2;
+  overflow: hidden;
+}
+
+.imageSpace img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.breakdownsImage {
+  object-position: left;
+}
+
+.textSpace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F0E7D8;
+  flex: 1;
+  min-width: 220px;
+}
+
+.textSpace h1 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #A1674A;
+}
+
+.textSpace p{
+  margin: 30px;
+}
+
+.divider {
+  height: 4px;
+  width: 80%;
+  max-width: 210px;
+  background-color: #A63A50;
+
+}
+
+.bannerService {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* Ensure the image doesn't overflow the container */
+}
+
+.bannerService button {
+  font-size: 1.2rem;
+  padding: 6px 30px;
+  color: white;
+  background-color: #A63A50;
+  border-radius: 25px;
+
+  width: 200px;
+}
+
+.bannerService button:hover {
+  background-color: #A1674A;
+  color: #000000;
+  cursor: pointer;
+}
+
+.bannerService img {
+  margin-top: 50px;
+  width: 45px;
+}
+
+.bannerImg {
+  max-width: 1200px;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+@media (max-width: 1000px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, minmax(190px, 1fr));
+  }
+
+  .heroContainer .titleText {
+    font-size: 1.05rem;
+    max-width: 50%;
+  }
+
+ 
+
+  .banner2 ul li {
+    margin: 25px 19px 5px;
+  }
+
+  .contactFormSection {
+    display: grid;
+    grid-template-rows: repeat(2);
+    height: 1050px;
+  }
+
+  .contactformBackground {
+    height: 1050px;
+  }
+
+  .contactFormSection form {
+    position: relative;
+    bottom: 40px;
+  }
+
+  .serviceSection p {
+    font-size: 0.85em;
+  }
+
+  #contactUsTarget{
+    transform: translateY(-25px);
+  }
+
+  .narrowScreenHeader {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 90px;
+    width: 100%;
+    height: 30px;
+    background-color: #F0E7D8;
+    outline: 3px double #A1674A;
+    outline-offset: -2px;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+  }
+
+  .menuItems {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 48px);
+  }
+
+}
+
+@media (max-width: 750px) {
+  .heroContainer .titleText {
+    font-size: 0.90rem;
+    max-width: 60%;
+    top: 32%;
+  }
+
+  .heroContainer .titleImageTriangle {
+    border-left: 280px solid transparent;
+    border-bottom: 430px solid #A63A50;
+  }
+
+  .banner2 {
+    font-size: 0.93rem;
+  }
+
+  .banner2 ul li {
+    margin: 10px 20px 5px;
+    font-size: 1.1rem;
+  }
+
+  .serviceSection h1 {
+    font-size: 1.2em;
+  }
+
+  .serviceSection p {
+    font-size: 0.8em;
+  }
+
+  .gridContainer .gridBoxHeader {
+    font-size: 1.5rem;
+  }
+
+  .gridContainer .gridBox img {
+    filter: brightness(0.6);
+  }
+
+  .gridContainer .gridBoxParagraph {
+    position: absolute;
+    top: 35%;
+    padding: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 685px){
+
+  .farRight {
+    display: none;
+  }
+}
