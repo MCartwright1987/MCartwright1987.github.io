@@ -105,11 +105,12 @@ button {
 
 .header .emailIcon {
   width: 17px;
+  transform: translateY(2px);
 }
 
 .header .phoneIcon {
   width: 15px;
-  transform: translateX(30px);
+  transform: translate(30px, 3px);
 }
 
 .facebookIcon img {
